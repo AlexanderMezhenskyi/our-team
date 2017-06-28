@@ -1,0 +1,60 @@
+@import "normalize.scss";
+@import "variables.scss";
+//@import "header/main.scss";
+
+@font-face {
+  font-family: "LobsterRegular";
+  src: url("../fonts/Lobster/LobsterRegular/LobsterRegular.eot");
+  src: url("../fonts/Lobster/LobsterRegular/LobsterRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Lobster/LobsterRegular/LobsterRegular.woff") format("woff"),
+  url("../fonts/Lobster/LobsterRegular/LobsterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+  url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot");
+  src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"),
+  url("../fonts/OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+p {
+  color: #44c0c2;
+  font-family: "LobsterRegular", sans-serif;
+  font-size: 43px;
+  font-weight: 400;
+}
