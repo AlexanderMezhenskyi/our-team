@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Our company</title>
 	<link rel="icon" href="favicon.png">
+	<!--<link rel="stylesheet" href="assets/stylesheets/normalize.css">-->
 	<link rel="stylesheet" href="lib/slick.css">
 	<link rel="stylesheet" href="lib/slick-theme.css">
 	<link rel="stylesheet" href="assets/stylesheets/main.css">
@@ -16,14 +17,14 @@
 
 </head>
 <body>
-<header class="ma-header">
+<header id="ma-header" class="ma-header">
 	<section class="ma-container">
 		<a class="ma-logo" href="#">Author</a>
 		<nav class="ma-navigation">
-			<ul class="ma-menu">
+			<ul class="ma-menu default fixed">
 				<li class="ma-menu__item"><a class="ma-menu__link ma-menu__link--active" href="#">Home</a></li>
-				<li class="ma-menu__item"><a class="ma-menu__link" href="#ma-service">Service</a></li>
-				<li class="ma-menu__item"><a class="ma-menu__link" href="#ma-portfolio">Portfolio</a></li>
+				<li class="ma-menu__item"><a class="ma-menu__link" href="#">Service</a></li>
+				<li class="ma-menu__item"><a class="ma-menu__link" href="#">Portfolio</a></li>
 				<li class="ma-menu__item"><a class="ma-menu__link" href="#ma-team">Team</a></li>
 				<li class="ma-menu__item"><a class="ma-menu__link" href="#ma-blog">Blog</a></li>
 				<li class="ma-menu__item"><a class="ma-menu__link" href="#ma-contact">Contact</a></li>
@@ -32,17 +33,112 @@
 	</section>
 </header>
 <main>
-
 	<section id="ma-banner" class="ma-banner">
-
-
+		<section class="ma-slider">
+			<section class="ma-banner__slide">
+				<header class="ma-banner__header">
+					<h1>This is a main heading</h1>
+				</header>
+				<section class="ma-banner__description">
+					<p>
+						Lorem ipsum is simply dummy text<br>
+						of the printing
+					</p>
+				</section>
+				<footer>
+					<a class="ma-banner__button" href="#">Learn More</a>
+				</footer>
+			</section>
+			<section class="ma-banner__slide">
+				<header class="ma-banner__header">
+					<h1>This is a main heading</h1>
+				</header>
+				<section class="ma-banner__description">
+					<p>
+						Lorem ipsum is simply dummy text<br>
+						of the printing
+					</p>
+				</section>
+				<footer>
+					<a class="ma-banner__button" href="#">Learn More</a>
+				</footer>
+			</section>
+			<section class="ma-banner__slide">
+				<header class="ma-banner__header">
+					<h1>This is a main heading</h1>
+				</header>
+				<section class="ma-banner__description">
+					<p>
+						Lorem ipsum is simply dummy text<br>
+						of the printing
+					</p>
+				</section>
+				<footer>
+					<a class="ma-banner__button" href="#">Learn More</a>
+				</footer>
+			</section>
+		</section>
 	</section>
-	<section id="ma-team" class="ma-team">
 
+
+	<section id="ma-team" class="ma-team">
+		<section class="ma-container">
+			<header class="ma-team__header">
+				<h3>The Team</h3>
+			</header>
+			<section class="ma-team-cards">
+
+				<section class="ma-team-card">
+					<div class="ma-team-card__item"></div>
+					<h5 class="ma-team-card__title">Adrian Thomas</h5>
+					<h6 class="ma-team-card__subtitle">CEO &amp Founder</h6>
+					<p class="ma-team-card__description">
+						Lorem ipsum is simply dummy text of<br>
+						the printing and typesetting industry.<br>
+						Lorem ipsum has been
+					</p>
+				</section>
+
+				<section class="ma-team-card">
+					<div class="ma-team-card__item ma-team-card__item--plus">+</div>
+					<h5 class="ma-team-card__title">Narate Ketram</h5>
+					<h6 class="ma-team-card__subtitle">Creative Director</h6>
+					<p class="ma-team-card__description">
+						Lorem ipsum is simply dummy text of<br>
+						the printing and typesetting industry.<br>
+						Lorem ipsum has been
+					</p>
+				</section>
+
+				<section class="ma-team-card">
+					<div class="ma-team-card__item"></div>
+					<h5 class="ma-team-card__title">Fernando Comet</h5>
+					<h6 class="ma-team-card__subtitle">CEO &amp Founder</h6>
+					<p class="ma-team-card__description">
+						Lorem ipsum is simply dummy text of<br>
+						the printing and typesetting industry.<br>
+						Lorem ipsum has been
+					</p>
+				</section>
+
+				<section class="ma-team-card">
+					<div class="ma-team-card__item"></div>
+					<h5 class="ma-team-card__title">Adedayo saheed</h5>
+					<h6 class="ma-team-card__subtitle">Creative Director</h6>
+					<p class="ma-team-card__description">
+						Lorem ipsum is simply dummy text of<br>
+						the printing and typesetting industry.<br>
+						Lorem ipsum has been
+					</p>
+				</section>
+
+			</section>
+		</section>
 	</section>
 	<section id="ma-blog" class="ma-blog">
 
 	</section>
+
 
 </main>
 <footer id="ma-contact" class="ma-contact">
@@ -50,9 +146,10 @@
 </footer>
 
 
-
-
 <script src="lib/jquery.min.js"></script>
+<script src="lib/jquery.sticky.js"></script>
+<script src="assets/scripts/menu-scroll.js"></script>
 <script src="lib/slick.min.js"></script>
+<script src="assets/scripts/banner-slider.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import "normalize.scss";
+//@import "normalize.scss";
 @import "variables.scss";
 //@import "header/main.scss";
 
@@ -75,17 +75,16 @@ body, html {
 }
 
 .ma-header {
-  width: 100%;
-  position: fixed;
+  //padding: 40px 0;
 }
 
 .ma-logo {
   float: left;
   text-decoration: none;
-  color: #44c0c2;
   font-family: "LobsterRegular", sans-serif;
   font-size: 43px;
   font-weight: 400;
+  color: #44c0c2;
   padding-top: 20px;
 }
 
@@ -93,22 +92,13 @@ body, html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-content: flex-end;
   align-items: center;
   list-style: none;
   position: relative;
   padding: 0;
-  margin: -10px 0 0;
-  float: right;
-
-  &__item {
-    float: left;
-    margin: 10px 0;
-/*    &:last-child {
-      padding-right: 0;
-    }*/
-  }
+  margin: 0;
 
   &__link {
     display: block;
@@ -142,5 +132,105 @@ body, html {
       color: #49cbcd;
       background: #f8f9fb;
     }
+  }
+}
+
+.ma-banner {
+  background: #49cbcd url("../../assets/img/banner.jpg") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__slide {
+    padding-top: 135px;
+    padding-bottom: 145px;
+  }
+  &__header {
+    color: $primaryColor;
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 63px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+  }
+  &__description {
+    color: $primaryColor;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 55px;
+  }
+  &__button {
+    color: $primaryColor;
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 3px solid $primaryColor;
+    border-radius: 3px 2px 2px 3px;
+    margin-bottom: 100px;
+    &:hover {
+      border: 3px solid rgba(73, 203, 205, 0.3);
+      color: rgba(73, 203, 205, 1);
+      box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.3);
+    }
+  }
+}
+
+.ma-team {
+  padding: 105px 0;
+  text-align: center;
+  &__header {
+    color: $secondaryColor;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 135px;
+
+  }
+}
+
+.ma-team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ma-team-card {
+  &__item {
+    width: 201px;
+    height: 201px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: #eeeef0;
+    margin-bottom: 70px;
+    &--plus {
+      color: #f46d6d;
+      font-family: "OpenSansBold", sans-serif;
+      font-size: 85px;
+      font-weight: 700;
+      padding: 40px;
+    }
+  }
+  &__title {
+    color: $secondaryColor;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    color: $secondaryColor;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+  &__description {
+    color: $secondaryColor;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
