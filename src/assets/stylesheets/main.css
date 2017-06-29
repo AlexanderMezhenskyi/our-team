@@ -1,3 +1,10 @@
+.ma-title, .ma-menu__link, .ma-banner__description, .ma-team-card__title, .ma-team-card__subtitle, .ma-team-card__description, .ma-team__header, .ma-plan__title, .ma-plan__content-item, .ma-plan__content-item--large, .ma-contact-information__title, .ma-contact-information__description, .ma-contact-information__phone, .ma-contact-form__btn, input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder, .ma-contact__title {
+  color: #4e525d;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
 @font-face {
   font-family: "LobsterRegular";
   src: url("../fonts/Lobster/LobsterRegular/LobsterRegular.eot");
@@ -32,40 +39,6 @@
   src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  transition: all 0.4s ease-in;
-  margin: 0;
-  padding: 0; }
-
-html {
-  height: 100%; }
-
-body, html {
-  min-height: 100%; }
-
-.ma-container {
-  max-width: 1170px;
-  margin: 0 auto; }
-
-.ma-title, .ma-menu__link, .ma-banner__description, .ma-team__header, .ma-team-card__title, .ma-team-card__subtitle, .ma-team-card__description, .ma-plan__title, .ma-plan__content-item, .ma-plan__content-item--large, .ma-contact__title, .ma-contact-information__title, .ma-contact-information__description, .ma-contact-information__phone, .ma-contact-form__btn, input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #4e525d;
-  font-family: "OpenSansRegular", sans-serif;
-  font-size: 14px;
-  font-weight: 400; }
-
-.ma-logo {
-  float: left;
-  text-decoration: none;
-  font-family: "LobsterRegular", sans-serif;
-  font-size: 43px;
-  font-weight: 400;
-  color: #44c0c2;
-  padding-top: 20px; }
 
 .ma-menu {
   display: flex;
@@ -104,6 +77,15 @@ textarea::-webkit-input-placeholder {
     .ma-menu__link--active {
       color: #49cbcd;
       background: #f8f9fb; }
+
+.ma-logo {
+  float: left;
+  text-decoration: none;
+  font-family: "LobsterRegular", sans-serif;
+  font-size: 43px;
+  font-weight: 400;
+  color: #44c0c2;
+  padding-top: 20px; }
 
 .ma-banner {
   text-align: center; }
@@ -165,19 +147,6 @@ textarea::-webkit-input-placeholder {
 [dir='rtl'] .slick-next:before {
   content: url("../../assets/img/right-arrow.png"); }
 
-.ma-team {
-  padding: 105px 0;
-  text-align: center; }
-  .ma-team__header {
-    font-size: 42px;
-    margin-bottom: 135px; }
-
-.ma-team-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
 .ma-team-card {
   margin-bottom: 20px; }
   .ma-team-card__item {
@@ -200,12 +169,14 @@ textarea::-webkit-input-placeholder {
   .ma-team-card__subtitle {
     margin-bottom: 35px; }
 
-.ma-blog {
-  background: #f1f1f1;
-  padding-top: 115px;
-  padding-bottom: 100px; }
+.ma-team {
+  padding: 105px 0;
+  text-align: center; }
+  .ma-team__header {
+    font-size: 42px;
+    margin-bottom: 135px; }
 
-.ma-plans {
+.ma-team-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -261,18 +232,12 @@ textarea::-webkit-input-placeholder {
 .ma-plan-active {
   background: #48ccce; }
 
-.ma-contact {
-  background: #292929 url("../../assets/img/contact-us.jpg") 50% no-repeat;
-  background-size: cover;
-  padding-top: 105px;
-  padding-bottom: 100px;
-  text-align: center; }
-  .ma-contact__title {
-    color: #ffffff;
-    font-size: 42px;
-    margin-bottom: 120px; }
+.ma-blog {
+  background: #f1f1f1;
+  padding-top: 115px;
+  padding-bottom: 100px; }
 
-.ma-contact-content {
+.ma-plans {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -363,6 +328,41 @@ input:focus,
 textarea:focus {
   outline: none;
   background-color: #49cbcd; }
+
+.ma-contact {
+  background: #292929 url("../../assets/img/contact-us.jpg") 50% no-repeat;
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 100px;
+  text-align: center; }
+  .ma-contact__title {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 120px; }
+
+.ma-contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body, html {
+  min-height: 100%; }
+
+.ma-container {
+  max-width: 1170px;
+  margin: 0 auto; }
 
 @media (max-width: 999px) {
   .ma-team-card {
