@@ -1,0 +1,36 @@
+
+.slick-prev, .slick-next {
+  z-index: 1001;
+  width: 52px;
+  height: 52px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 52px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 25px;
+}
+
+
+.slick-prev:before
+{
+  content: url("../../assets/img/left-arrow.png");
+}
+[dir='rtl'] .slick-prev:before
+{
+  content: url("../../assets/img/left-arrow.png");
+}
+
+.slick-next:before
+{
+  content: url("../../assets/img/right-arrow.png");
+}
+[dir='rtl'] .slick-next:before
+{
+  content: url("../../assets/img/right-arrow.png");
+}
+

@@ -1,0 +1,25 @@
+@import "information";
+@import "form";
+
+.ma-contact {
+  background: #292929 url("../../assets/img/contact-us.jpg") 50% no-repeat;
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 100px;
+  text-align: center;
+  &__title {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 42px;
+    margin-bottom: 120px;
+  }
+}
+
+.ma-contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+

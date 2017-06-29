@@ -1,0 +1,53 @@
+.ma-contact-form {
+  text-align: right;
+  &__name,
+  &__email {
+    width: 270px;
+    border: none;
+    border-radius: 3px 2px 2px 3px;
+    background-color: $primaryColor;
+    padding: 15px 0 15px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  &__message {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: $primaryColor;
+    padding: 15px 0 15px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    overflow: auto;
+    resize: none;
+  }
+  &__btn {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 2px 3px 3px 2px;
+    background-color: #49cbcd;
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 22px;
+    &:hover {
+      color: #49cbcd;
+      background: $primaryColor;
+      border: 3px solid #49cbcd;
+      border-radius: 1px;
+    }
+  }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  @extend .ma-title;
+  color: #c1c1c1;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: #49cbcd;
+}

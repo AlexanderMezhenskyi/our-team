@@ -1,0 +1,20 @@
+@import "card";
+
+.ma-team {
+  padding: 105px 0;
+  text-align: center;
+  &__header {
+    @extend .ma-title;
+    font-size: 42px;
+    margin-bottom: 135px;
+
+  }
+}
+
+.ma-team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+

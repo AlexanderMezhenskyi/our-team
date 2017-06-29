@@ -1,0 +1,54 @@
+.ma-contact-information {
+  text-align: left;
+  &__title {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  &__description {
+    @extend .ma-title;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+  }
+  &__social-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__social-item {
+    margin: 0 15px 22px;
+    border-radius: 50%;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.25s ease-in;
+    }
+  }
+  &__author {
+    text-decoration: none;
+    color: #bface2;
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__phone {
+    text-decoration: none;
+    color: #bface2;
+    @extend .ma-title;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__email {
+    text-decoration: none;
+    color: #bface2;
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

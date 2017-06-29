@@ -1,0 +1,40 @@
+.ma-banner {
+  text-align: center;
+  position: relative;
+  &__slide {
+    padding-top: 135px;
+    padding-bottom: 145px;
+    background: #49cbcd url("../../assets/img/banner.jpg") 50% no-repeat;
+    background-size: cover;
+  }
+  &__header {
+    color: $primaryColor;
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 63px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+  }
+  &__description {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 23px;
+    margin-bottom: 55px;
+  }
+  &__button {
+    color: $primaryColor;
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 3px solid $primaryColor;
+    border-radius: 3px 2px 2px 3px;
+    margin-bottom: 100px;
+    &:hover {
+      border: 3px solid rgba(73, 203, 205, 0.3);
+      color: rgba(73, 203, 205, 1);
+      box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.3);
+    }
+  }
+}
