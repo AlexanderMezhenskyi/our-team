@@ -74,8 +74,11 @@ body, html {
   margin: 0 auto;
 }
 
-.ma-header {
-  //padding: 40px 0;
+.ma-title {
+  color: $secondaryColor;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .ma-logo {
@@ -105,9 +108,8 @@ body, html {
     position: relative;
     text-decoration: none;
     color: #484c55;
-    font-family: "OpenSansRegular", sans-serif;
+    @extend .ma-title;
     font-size: 15px;
-    font-weight: 400;
     line-height: 1;
     padding: 42px 25px;
     &:before {
@@ -136,12 +138,12 @@ body, html {
 }
 
 .ma-banner {
-  background: #49cbcd url("../../assets/img/banner.jpg") 50% no-repeat;
-  background-size: cover;
   text-align: center;
   &__slide {
     padding-top: 135px;
     padding-bottom: 145px;
+    background: #49cbcd url("../../assets/img/banner.jpg") 50% no-repeat;
+    background-size: cover;
   }
   &__header {
     color: $primaryColor;
@@ -152,10 +154,9 @@ body, html {
     margin-bottom: 30px;
   }
   &__description {
+    @extend .ma-title;
     color: $primaryColor;
-    font-family: "OpenSansRegular", sans-serif;
     font-size: 23px;
-    font-weight: 400;
     margin-bottom: 55px;
   }
   &__button {
@@ -180,10 +181,8 @@ body, html {
   padding: 105px 0;
   text-align: center;
   &__header {
-    color: $secondaryColor;
-    font-family: "OpenSansRegular", sans-serif;
+    @extend .ma-title;
     font-size: 42px;
-    font-weight: 400;
     margin-bottom: 135px;
 
   }
@@ -197,6 +196,7 @@ body, html {
 }
 
 .ma-team-card {
+  margin-bottom: 20px;
   &__item {
     width: 201px;
     height: 201px;
@@ -214,23 +214,223 @@ body, html {
     }
   }
   &__title {
-    color: $secondaryColor;
-    font-family: "OpenSansRegular", sans-serif;
+    @extend .ma-title;
     font-size: 22px;
-    font-weight: 400;
     margin-bottom: 10px;
   }
   &__subtitle {
-    color: $secondaryColor;
-    font-family: "OpenSansRegular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    @extend .ma-title;
     margin-bottom: 35px;
   }
   &__description {
-    color: $secondaryColor;
-    font-family: "OpenSansRegular", sans-serif;
+    @extend .ma-title;
+  }
+}
+
+.ma-blog {
+  background: #f1f1f1;
+  padding-top: 115px;
+  padding-bottom: 100px;
+}
+
+.ma-plans {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ma-plan {
+  padding: 30px auto;
+  text-align: center;
+  margin-bottom: 20px;
+  &__title {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 26px;
+    background: #475460;
+    padding: 28px 130px;
+    &--pro {
+      padding-left: 165px;
+      padding-right: 165px;
+    }
+    &--basic {
+      padding-left: 155px;
+      padding-right: 155px;
+    }
+  }
+  &__content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__content-item {
+    @extend .ma-title;
+    color: #8c9299;
+    padding: 15px 0;
+    border-bottom: 1px solid #ecf0f1;
+    background: #ffffff;
+    &:hover {
+      background: #f9f9fb;
+    }
+    &--large {
+      @extend .ma-title;
+      color: #485460;
+      font-size: 20px;
+      padding: 25px 0;
+    }
+  }
+  &__footer {
+    padding: 30px 0;
+    background: #f8f9fb;
+  }
+  &__btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 2px 3px 3px 2px;
+    border: none;
+    background-color: #788492;
+    color: #ffffff;
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    &:hover {
+      background: #48ccce;
+    }
+  }
+}
+
+.ma-plan-active {
+  background: #48ccce;
+}
+
+.ma-contact {
+  background: #292929 url("../../assets/img/contact-us.jpg") 50% no-repeat;
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 100px;
+  text-align: center;
+  &__title {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 42px;
+    margin-bottom: 120px;
+  }
+}
+
+.ma-contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ma-contact-information {
+  text-align: left;
+  &__title {
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  &__description {
+    @extend .ma-title;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+  }
+  &__social-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__social-item {
+    margin: 0 15px 22px;
+    border-radius: 50%;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.25s ease-in;
+    }
+  }
+  &__author {
+    text-decoration: none;
+    color: #bface2;
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__phone {
+    text-decoration: none;
+    color: #bface2;
+    @extend .ma-title;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__email {
+    text-decoration: none;
+    color: #bface2;
+    font-family: "MyriadProRegular", sans-serif;
     font-size: 14px;
     font-weight: 400;
   }
+}
+
+.ma-contact-form {
+  text-align: right;
+  &__name,
+  &__email {
+    width: 270px;
+    border: none;
+    border-radius: 3px 2px 2px 3px;
+    background-color: $primaryColor;
+    padding: 15px 0 15px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  &__message {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: $primaryColor;
+    padding: 15px 0 15px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    overflow: auto;
+    resize: none;
+  }
+  &__btn {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 2px 3px 3px 2px;
+    background-color: #49cbcd;
+    @extend .ma-title;
+    color: $primaryColor;
+    font-size: 22px;
+    &:hover {
+      color: #49cbcd;
+      background: $primaryColor;
+      border: 3px solid #49cbcd;
+      border-radius: 1px;
+    }
+  }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  @extend .ma-title;
+  color: #c1c1c1;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: #49cbcd;
 }
