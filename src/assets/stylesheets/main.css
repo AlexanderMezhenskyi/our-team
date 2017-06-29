@@ -55,7 +55,6 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
     display: block;
     position: relative;
     text-decoration: none;
-    color: #484c55;
     font-size: 15px;
     line-height: 1;
     padding: 42px 25px; }
@@ -71,12 +70,12 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
       opacity: 0;
       transform: translateY(-10px);
       transition: transform .2s ease-in, opacity .2s ease-in; }
-    .ma-menu__link--active:before, .ma-menu__link:hover:before {
+    .ma-menu__link:hover:before {
       opacity: 1;
       transform: translateY(0); }
-    .ma-menu__link--active {
+    .ma-menu__link:hover {
       color: #49cbcd;
-      background: #f8f9fb; }
+      background: rgba(248, 249, 251, 0.5); }
 
 .ma-logo {
   float: left;
@@ -88,7 +87,8 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
   padding-top: 20px; }
 
 .ma-banner {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .ma-banner__slide {
     padding-top: 135px;
     padding-bottom: 145px;
@@ -156,7 +156,8 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
     border: 1px solid transparent;
     border-radius: 50%;
     background: #eeeef0;
-    margin: 0 auto 70px; }
+    margin: 0 auto 70px;
+    z-index: -1; }
     .ma-team-card__item--plus {
       color: #f46d6d;
       font-family: "OpenSansBold", sans-serif;
