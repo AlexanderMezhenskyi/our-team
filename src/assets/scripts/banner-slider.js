@@ -5,6 +5,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true,
 		infinite: true,
+		adaptiveHeight: true,
 		responsive: [
 			{
 				breakpoint: 570,

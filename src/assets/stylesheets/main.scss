@@ -242,7 +242,7 @@ body, html {
     border: 1px solid transparent;
     border-radius: 50%;
     background: #eeeef0;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
     &--plus {
       color: #f46d6d;
       font-family: "OpenSansBold", sans-serif;
@@ -471,4 +471,66 @@ input:focus,
 textarea:focus {
   outline: none;
   background-color: #49cbcd;
+}
+
+
+@media (max-width: 999px) {
+  .ma-team-card {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 1133px) {
+  .ma-plan {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 1051px) {
+  .ma-contact-information,
+  .ma-contact-form {
+    margin: 20px auto;
+  }
+  .ma-contact-form__name,
+  .ma-contact-form__message {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1021px) {
+  .ma-contact-information,
+  .ma-contact-form {
+    margin: 20px auto;
+  }
+}
+
+
+@media (max-width: 1021px) {
+  .ma-contact-information {
+    text-align: center;
+  }
+  .ma-contact-information__social-item {
+    margin: 0 auto 20px;
+  }
+  .ma-contact-information__social-item:first-child{
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 447px) {
+  .ma-contact-information__social-item:first-child{
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 620px) {
+  .ma-contact-form__name,
+  .ma-contact-form__email,
+  .ma-contact-form__message{
+    margin: 15px auto;
+    width: 100%;
+  }
+  .ma-contact-form {
+    text-align: center;
+  }
 }
