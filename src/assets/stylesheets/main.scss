@@ -1,6 +1,6 @@
-//@import "normalize.scss";
 @import "variables.scss";
-//@import "header/main.scss";
+@import "header/main.scss";
+
 
 @font-face {
   font-family: "LobsterRegular";
@@ -80,6 +80,7 @@ body, html {
   font-size: 14px;
   font-weight: 400;
 }
+
 
 .ma-logo {
   float: left;
