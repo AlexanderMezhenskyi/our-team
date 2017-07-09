@@ -28,13 +28,11 @@
     font-weight: 600;
     text-decoration: none;
     padding: 20px 40px;
-    border: 3px solid $primaryColor;
-    border-radius: 3px 2px 2px 3px;
     margin-bottom: 100px;
     &:hover {
-      border: 3px solid rgba(73, 203, 205, 0.3);
-      color: rgba(73, 203, 205, 1);
-      box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.3);
+      border: 3px solid $primaryColor;
+      border-radius: 3px 2px 2px 3px;
+      transition: all 0.1s ease-in;
     }
   }
 }

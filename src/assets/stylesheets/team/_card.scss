@@ -1,5 +1,10 @@
 .ma-team-card {
   margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &:hover {
+    background: #f1f1f1;
+  }
   &__item {
     width: 201px;
     height: 201px;
@@ -8,14 +13,7 @@
     border-radius: 50%;
     background: #eeeef0;
     margin: 0 auto 70px;
-    z-index: -1;
-    &--plus {
-      color: #f46d6d;
-      font-family: "OpenSansBold", sans-serif;
-      font-size: 85px;
-      font-weight: 700;
-      padding: 40px;
-    }
+    background: url("../../assets/img/team-person.jpg") 50% no-repeat;
   }
   &__title {
     @extend .ma-title;

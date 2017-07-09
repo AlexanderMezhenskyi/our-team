@@ -112,13 +112,11 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
     font-weight: 600;
     text-decoration: none;
     padding: 20px 40px;
-    border: 3px solid #ffffff;
-    border-radius: 3px 2px 2px 3px;
     margin-bottom: 100px; }
     .ma-banner__button:hover {
-      border: 3px solid rgba(73, 203, 205, 0.3);
-      color: #49cbcd;
-      box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.3); }
+      border: 3px solid #ffffff;
+      border-radius: 3px 2px 2px 3px;
+      transition: all 0.1s ease-in; }
 
 .slick-prev, .slick-next {
   z-index: 1001;
@@ -148,7 +146,11 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
   content: url("../../assets/img/right-arrow.png"); }
 
 .ma-team-card {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .ma-team-card:hover {
+    background: #f1f1f1; }
   .ma-team-card__item {
     width: 201px;
     height: 201px;
@@ -157,13 +159,7 @@ textarea::-webkit-input-placeholder, .ma-contact__title {
     border-radius: 50%;
     background: #eeeef0;
     margin: 0 auto 70px;
-    z-index: -1; }
-    .ma-team-card__item--plus {
-      color: #f46d6d;
-      font-family: "OpenSansBold", sans-serif;
-      font-size: 85px;
-      font-weight: 700;
-      padding: 40px; }
+    background: url("../../assets/img/team-person.jpg") 50% no-repeat; }
   .ma-team-card__title {
     font-size: 22px;
     margin-bottom: 10px; }
